@@ -1,6 +1,5 @@
-import { Box, Flex, VStack } from '@chakra-ui/react';
+import { Box, Flex, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
-import ExampleApp from './ExampleApp';
 
 export default function Content() {
 	return (
@@ -12,7 +11,20 @@ export default function Content() {
 			backgroundColor="#3B3B3B"
 			flexBasis="75%"
 		>
-			<ExampleApp />
+			<Box
+				display="flex"
+				flexDirection="colomn"
+				justifyContent="center"
+				alignItems="center"
+				backgroundColor="lightgray"
+				rounded="lg"
+				h="95%"
+				w="95%"
+			>
+				<Text fontSize={'7xl'} color="black">
+					ADD APP HERE
+				</Text>
+			</Box>
 		</Flex>
 	);
 }
