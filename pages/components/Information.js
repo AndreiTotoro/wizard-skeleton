@@ -1,14 +1,15 @@
 import { Box, Flex, VStack } from '@chakra-ui/react';
 import React from 'react';
-import Description from './Description';
+import Description from './StepDescription';
 import ShoppingCart from './ShoppingCart';
 import { SiAseprite } from 'react-icons/si';
+import StepDescription from './StepDescription';
 
 export default function Information() {
 	return (
 		<VStack height="100vh" backgroundColor={'#222222'} flexBasis="25%">
-			<Description
-				StepIcon={<SiAseprite />}
+			<StepDescription
+				StepIcon={<SiAseprite size="10em" />}
 				StepNumber={1}
 				StepTitle={'Artwork Generator'}
 				StepDescription={
