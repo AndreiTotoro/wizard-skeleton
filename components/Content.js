@@ -7,6 +7,7 @@ export default function Content({
 	setCurrentStep,
 	currentStep,
 	addItemToCart,
+	currentApp,
 }) {
 	const handleNextClick = () => {
 		setCurrentStep(currentStep + 1);
@@ -44,7 +45,7 @@ export default function Content({
 				w="95%"
 			>
 				<Text fontSize={'7xl'} color="black">
-					ADD APP HERE
+					{currentApp}
 				</Text>
 			</Box>
 			<Box alignSelf="flex-start" display="flex">

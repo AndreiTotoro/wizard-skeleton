@@ -4,6 +4,7 @@ import Content from '../components/Content';
 import Information from '../components/Information';
 import { IoBrushSharp } from 'react-icons/io5';
 import { IoMdCart } from 'react-icons/io';
+import { StepData } from '../data/StepData';
 
 export default function Home() {
 	const [currentStep, setCurrentStep] = useState(1);
@@ -21,6 +22,8 @@ export default function Home() {
 			icon: <IoMdCart size="30" color="black" />,
 		},
 	]);
+
+	const currentApp = StepData.find((elem) => elem.id == currentStep).app;
 
 	const addItemToCart = (name, description, price, icon) => {
 		setShoppingCartData([
@@ -40,6 +43,7 @@ export default function Home() {
 				setCurrentStep={setCurrentStep}
 				currentStep={currentStep}
 				addItemToCart={addItemToCart}
+				currentApp={currentApp}
 			/>
 		</Flex>
 	);
