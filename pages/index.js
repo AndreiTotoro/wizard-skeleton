@@ -4,7 +4,7 @@ import Content from '../components/Content';
 import Information from '../components/Information';
 
 export default function Home() {
-	const [currentStep, setCurrentStep] = useState('Artwork Generator');
+	const [currentStep, setCurrentStep] = useState('Artwork Creator');
 
 	return (
 		<Flex textColor="white" alignItems={'center'} alignContent={'center'}>

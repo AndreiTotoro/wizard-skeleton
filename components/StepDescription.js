@@ -2,10 +2,10 @@ import { Box, Image, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 export default function StepDescription({
-	StepIcon,
-	StepTitle,
-	StepDescription,
-	StepNumber,
+	stepIcon,
+	stepTitle,
+	stepDescription,
+	stepNumber,
 }) {
 	return (
 		<VStack
@@ -15,14 +15,14 @@ export default function StepDescription({
 			alignItems={'baseline'}
 			width="80%"
 		>
-			<Box alignSelf={'center'}>{StepIcon}</Box>
+			<Box alignSelf={'center'}>{stepIcon}</Box>
 			<Text fontSize="xs" pt={'4'} color={'#B1B1B1'}>
-				STEP {StepNumber}
+				STEP {stepNumber}
 			</Text>
 			<Text as="u" fontSize={'xl'} fontWeight="bold">
-				{StepTitle}
+				{stepTitle}
 			</Text>
-			<Text fontSize="sm">{StepDescription}</Text>
+			<Text fontSize="sm">{stepDescription}</Text>
 		</VStack>
 	);
 }
