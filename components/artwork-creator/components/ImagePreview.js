@@ -44,8 +44,8 @@ export default function ImagePreview({
 										<Image
 											src={img.url}
 											alt={'nothing'}
-											width={200}
-											height={200}
+											width={100}
+											height={100}
 											className="basis-1/6 m-4"
 										/>
 										<div className="flex items-center mx-4 pb-4 text-lg justify-between">

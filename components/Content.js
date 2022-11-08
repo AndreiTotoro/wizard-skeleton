@@ -21,7 +21,7 @@ export default function Content({
 			'Placeholder Title',
 			'Placeholder Description',
 			'Placeholder price',
-			<GrTestDesktop />
+			<GrTestDesktop size="30" color="black" />
 		);
 	};
 
@@ -44,9 +44,7 @@ export default function Content({
 				h="90%"
 				w="95%"
 			>
-				<Text fontSize={'7xl'} color="black">
-					{currentApp}
-				</Text>
+				{currentApp}
 			</Box>
 			<Box alignSelf="flex-start" display="flex">
 				<Button

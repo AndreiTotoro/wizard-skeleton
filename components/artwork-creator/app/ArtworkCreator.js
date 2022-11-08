@@ -14,7 +14,7 @@ export default function ArtworkCreator() {
 	]);
 
 	return (
-		<div className="flex h-full w-full divide-gray-800">
+		<div className="flex h-full min-w-full divide-gray-800">
 			<div className="basis-1/5">
 				<Layers
 					currentLayer={currentLayer}

@@ -20,7 +20,7 @@ export default function Settings({
 		setCurrentLayer(e.target.value);
 	};
 	return (
-		<div className="h-full text-white pl-9 pt-5 gap-5 bg-gradient-to-b from-midnight to-void flex flex-col">
+		<div className="text-sm h-full text-white pl-9 pt-5 gap-5 bg-gradient-to-b from-midnight to-void flex flex-col">
 			<p className="font-bold text-3xl">Settings</p>
 			<p className="text-2xl font-bold">Layer Name</p>
 			<div className=" mr-16">
