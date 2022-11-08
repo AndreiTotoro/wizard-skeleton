@@ -2,9 +2,12 @@ import { Box, Divider, Flex, VStack } from '@chakra-ui/react';
 import React from 'react';
 import ShoppingCart from './ShoppingCart';
 import StepDescription from './StepDescription';
-import { StepData } from '../data/StepData';
 
-export default function Information({ currentStep, shoppingCartData }) {
+export default function Information({
+	currentStep,
+	shoppingCartData,
+	StepData,
+}) {
 	const currentStepData = StepData.find((elem) => elem.id == currentStep);
 
 	return (

@@ -11,6 +11,7 @@ export default function Layers({
 	setCurrentLayer,
 	layerData,
 	setLayerData,
+	addWizardData,
 }) {
 	const onDragEnd = (droppedItem) => {
 		if (!droppedItem.destination) return;
@@ -40,7 +41,7 @@ export default function Layers({
 				</DragDropContext>
 				<LayerCreator layerData={layerData} setLayerData={setLayerData} />
 			</div>
-			<Preview />
+			<Preview addWizardData={addWizardData} layerData={layerData} />
 		</div>
 	);
 }

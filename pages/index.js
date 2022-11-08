@@ -10,6 +10,8 @@ import { FaFileContract } from 'react-icons/fa';
 import ArtworkCreator from '../components/artwork-creator/app/ArtworkCreator';
 
 export default function Home() {
+	const [wizardData, setWizardData] = useState([]);
+
 	const [shoppingCartData, setShoppingCartData] = useState([
 		{
 			name: 'Artwork Gen Package',
@@ -45,6 +47,10 @@ export default function Home() {
 		setShoppingCartData(newShoppingCartData);
 	};
 
+	const addWizardData = (data) => {
+		setWizardData([...wizardData, data]);
+	};
+
 	const StepData = [
 		{
 			id: 1,
@@ -64,6 +70,7 @@ export default function Home() {
 				<ArtworkCreator
 					addItemToCart={addItemToCart}
 					changeItemPrice={changeItemPrice}
+					addWizardData={addWizardData}
 				/>
 			),
 		},
@@ -84,6 +91,7 @@ export default function Home() {
 			<Information
 				currentStep={currentStep}
 				shoppingCartData={shoppingCartData}
+				StepData={StepData}
 			/>
 
 			<Content

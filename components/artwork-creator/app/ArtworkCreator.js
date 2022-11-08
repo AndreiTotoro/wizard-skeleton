@@ -5,7 +5,7 @@ import Layers from './Layers';
 import Main from './Main';
 import Settings from './Settings';
 
-export default function ArtworkCreator() {
+export default function ArtworkCreator({ addWizardData }) {
 	const [currentLayer, setCurrentLayer] = useState('');
 	const [layerData, setLayerData] = useState([
 		{ name: 'Head', images: [], rarity: 50 },
@@ -21,6 +21,7 @@ export default function ArtworkCreator() {
 					setCurrentLayer={setCurrentLayer}
 					layerData={layerData}
 					setLayerData={setLayerData}
+					addWizardData={addWizardData}
 				/>
 			</div>
 			<div className="basis-3/5">
