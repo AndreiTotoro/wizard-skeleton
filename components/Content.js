@@ -2,8 +2,11 @@ import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 export default function Content({ setCurrentStep }) {
-	const handleClick = () => {
+	const handleNextClick = () => {
 		setCurrentStep('Marketplace Creator');
+	};
+	const handlePreviousClick = () => {
+		setCurrentStep('Artwork Creator');
 	};
 
 	return (
@@ -29,16 +32,27 @@ export default function Content({ setCurrentStep }) {
 					ADD APP HERE
 				</Text>
 			</Box>
-			<Button
-				backgroundColor="black"
-				alignSelf="flex-start"
-				ml="9"
-				mt="4"
-				px="4"
-				onClick={handleClick}
-			>
-				Next Step
-			</Button>
+			<Box alignSelf="flex-start" display="flex">
+				<Button
+					backgroundColor="black"
+					ml="9"
+					mt="4"
+					px="4"
+					onClick={handleNextClick}
+				>
+					Next Step
+				</Button>
+				<Button
+					backgroundColor="black"
+					alignSelf="flex-start"
+					ml="9"
+					mt="4"
+					px="4"
+					onClick={handlePreviousClick}
+				>
+					Previous Step
+				</Button>
+			</Box>
 		</Flex>
 	);
 }
