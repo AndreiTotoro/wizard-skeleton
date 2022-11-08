@@ -22,6 +22,13 @@ export default function Home() {
 		},
 	]);
 
+	const addItemToCart = (name, description, price, icon) => {
+		setShoppingCartData([
+			...shoppingCartData,
+			{ name: name, description: description, price: price, icon: icon },
+		]);
+	};
+
 	return (
 		<Flex textColor="white" alignItems={'center'} alignContent={'center'}>
 			<Information
@@ -29,7 +36,11 @@ export default function Home() {
 				shoppingCartData={shoppingCartData}
 			/>
 
-			<Content setCurrentStep={setCurrentStep} currentStep={currentStep} />
+			<Content
+				setCurrentStep={setCurrentStep}
+				currentStep={currentStep}
+				addItemToCart={addItemToCart}
+			/>
 		</Flex>
 	);
 }

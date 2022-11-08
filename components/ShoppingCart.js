@@ -4,7 +4,7 @@ import OrderItem from './OrderItem';
 export default function ShoppingCart({ shoppingCartData }) {
 	return (
 		<Flex
-			pt="30"
+			pt="45"
 			alignSelf="flex-start"
 			pl="45"
 			flexDirection="column"

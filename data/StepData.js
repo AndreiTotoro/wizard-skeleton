@@ -1,5 +1,6 @@
 import { SiAseprite } from 'react-icons/si';
 import { BsShop } from 'react-icons/bs';
+import { FaFileContract } from 'react-icons/fa';
 
 export const StepData = [
 	{
@@ -15,5 +16,12 @@ export const StepData = [
 		stepIcon: <BsShop size="5em" />,
 		description:
 			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. With the release of Letraset.',
+	},
+	{
+		id: 3,
+		name: 'Contract Maker',
+		stepIcon: <FaFileContract size="5em" />,
+		description:
+			'Lorem Ipsum is simply dummy text of the printing of the printing and typesetting industry. With the release of Letraset.',
 	},
 ];

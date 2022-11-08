@@ -1,12 +1,27 @@
 import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
-export default function Content({ setCurrentStep, currentStep }) {
+import { GrTestDesktop } from 'react-icons/gr';
+
+export default function Content({
+	setCurrentStep,
+	currentStep,
+	addItemToCart,
+}) {
 	const handleNextClick = () => {
 		setCurrentStep(currentStep + 1);
 	};
 	const handlePreviousClick = () => {
 		setCurrentStep(currentStep - 1);
+	};
+
+	const handleAddCartClick = () => {
+		addItemToCart(
+			'Placeholder Title',
+			'Placeholder Description',
+			'Placeholder price',
+			<GrTestDesktop />
+		);
 	};
 
 	return (
@@ -56,6 +71,16 @@ export default function Content({ setCurrentStep, currentStep }) {
 						Previous Step
 					</Button>
 				)}
+				<Button
+					backgroundColor="black"
+					alignSelf="flex-start"
+					ml="9"
+					mt="4"
+					px="4"
+					onClick={handleAddCartClick}
+				>
+					Add test item to cart
+				</Button>
 			</Box>
 		</Flex>
 	);

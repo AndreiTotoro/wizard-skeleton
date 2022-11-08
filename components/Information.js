@@ -1,8 +1,6 @@
 import { Box, Divider, Flex, VStack } from '@chakra-ui/react';
 import React from 'react';
-import Description from './StepDescription';
 import ShoppingCart from './ShoppingCart';
-import { SiAseprite } from 'react-icons/si';
 import StepDescription from './StepDescription';
 import { StepData } from '../data/StepData';
 
@@ -17,7 +15,7 @@ export default function Information({ currentStep, shoppingCartData }) {
 				stepNumber={currentStepData.id}
 				stepTitle={currentStepData.name}
 			/>
-			<Divider />
+			<Divider width="70%" />
 			<ShoppingCart shoppingCartData={shoppingCartData} />
 		</VStack>
 	);
