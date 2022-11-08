@@ -17,13 +17,13 @@ export default function Home() {
 			name: 'Artwork Gen Package',
 			description: 'Generate an entire NFT collection!',
 			price: 300,
-			icon: <IoBrushSharp size="30" color="black" />,
+			icon: <IoBrushSharp size="30" color="white" />,
 		},
 		{
 			name: 'Marketplace Package',
 			description: 'Generate a customisable marketplace!',
 			price: 500,
-			icon: <IoMdCart size="30" color="black" />,
+			icon: <IoMdCart size="30" color="white" />,
 		},
 	]);
 

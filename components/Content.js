@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
-import { GrTestDesktop } from 'react-icons/gr';
+import { FiGift } from 'react-icons/fi';
 
 export default function Content({
 	setCurrentStep,
@@ -21,7 +21,7 @@ export default function Content({
 			'Placeholder Title',
 			'Placeholder Description',
 			'Placeholder price',
-			<GrTestDesktop size="30" color="black" />
+			<FiGift size="30" color="white" />
 		);
 	};
 
@@ -31,7 +31,7 @@ export default function Content({
 			justify={'center'}
 			align={'center'}
 			height={'100vh'}
-			backgroundColor="#3B3B3B"
+			backgroundColor="brand.secondary"
 			flexBasis="75%"
 		>
 			<Box
@@ -39,7 +39,7 @@ export default function Content({
 				flexDirection="colomn"
 				justifyContent="center"
 				alignItems="center"
-				backgroundColor="lightgray"
+				backgroundColor="brand.primary"
 				rounded="lg"
 				h="90%"
 				w="95%"
@@ -48,7 +48,7 @@ export default function Content({
 			</Box>
 			<Box alignSelf="flex-start" display="flex">
 				<Button
-					backgroundColor="black"
+					backgroundColor="brand.accent"
 					ml="9"
 					mt="4"
 					px="4"
@@ -60,7 +60,7 @@ export default function Content({
 					''
 				) : (
 					<Button
-						backgroundColor="black"
+						backgroundColor="brand.accent"
 						alignSelf="flex-start"
 						ml="9"
 						mt="4"

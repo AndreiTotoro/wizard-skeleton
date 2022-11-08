@@ -8,7 +8,7 @@ export default function OrderItem({ icon, title, description, price }) {
 			mb="4"
 			p="2"
 			rounded="md"
-			bgColor="purple"
+			bgColor="#FFCB00"
 			alignContent="center"
 			alignItems="center"
 		>
@@ -16,7 +16,7 @@ export default function OrderItem({ icon, title, description, price }) {
 				mr="4"
 				p="4"
 				rounded="md"
-				bgColor="lightgray"
+				bgColor="#1B1C25"
 				display="flex"
 				flexDirection="column"
 				height="100%"
@@ -27,7 +27,7 @@ export default function OrderItem({ icon, title, description, price }) {
 			>
 				{icon}
 			</Box>
-			<Flex direction="column">
+			<Flex direction="column" color="black">
 				<Text fontSize="md" fontWeight="bold">
 					{title}
 				</Text>

@@ -11,14 +11,14 @@ export default function Information({
 	const currentStepData = StepData.find((elem) => elem.id == currentStep);
 
 	return (
-		<VStack height="100vh" backgroundColor={'#222222'} flexBasis="25%">
+		<VStack height="100vh" backgroundColor={'brand.primary'} flexBasis="25%">
 			<StepDescription
 				stepDescription={currentStepData.description}
 				stepIcon={currentStepData.stepIcon}
 				stepNumber={currentStepData.id}
 				stepTitle={currentStepData.name}
 			/>
-			<Divider width="70%" />
+			<Divider width="70%" borderColor="brand.accent" />
 			<ShoppingCart shoppingCartData={shoppingCartData} />
 		</VStack>
 	);
