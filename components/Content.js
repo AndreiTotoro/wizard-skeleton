@@ -1,7 +1,11 @@
-import { Box, Flex, Text, VStack } from '@chakra-ui/react';
+import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
-export default function Content() {
+export default function Content({ setCurrentStep }) {
+	const handleClick = () => {
+		setCurrentStep('Marketplace Creator');
+	};
+
 	return (
 		<Flex
 			direction="column"
@@ -18,13 +22,23 @@ export default function Content() {
 				alignItems="center"
 				backgroundColor="lightgray"
 				rounded="lg"
-				h="95%"
+				h="90%"
 				w="95%"
 			>
 				<Text fontSize={'7xl'} color="black">
 					ADD APP HERE
 				</Text>
 			</Box>
+			<Button
+				backgroundColor="black"
+				alignSelf="flex-start"
+				ml="9"
+				mt="4"
+				px="4"
+				onClick={handleClick}
+			>
+				Next Step
+			</Button>
 		</Flex>
 	);
 }

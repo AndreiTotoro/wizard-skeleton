@@ -6,7 +6,7 @@ import { SiAseprite } from 'react-icons/si';
 import StepDescription from './StepDescription';
 import { StepData } from '../data/StepData';
 
-export default function Information({ currentStep }) {
+export default function Information({ currentStep, shoppingCartData }) {
 	const currentStepData = StepData.find((elem) => elem.name == currentStep);
 
 	return (
@@ -18,7 +18,7 @@ export default function Information({ currentStep }) {
 				stepTitle={currentStepData.name}
 			/>
 			<Divider />
-			<ShoppingCart />
+			<ShoppingCart shoppingCartData={shoppingCartData} />
 		</VStack>
 	);
 }

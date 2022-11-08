@@ -9,7 +9,7 @@ export default function StepDescription({
 }) {
 	return (
 		<VStack
-			flexBasis="60%"
+			flexBasis="40%"
 			justify={'center'}
 			alignContent={'baseline'}
 			alignItems={'baseline'}
