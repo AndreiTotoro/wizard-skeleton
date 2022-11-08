@@ -6,7 +6,7 @@ import { IoBrushSharp } from 'react-icons/io5';
 import { IoMdCart } from 'react-icons/io';
 
 export default function Home() {
-	const [currentStep, setCurrentStep] = useState('Artwork Creator');
+	const [currentStep, setCurrentStep] = useState(1);
 	const [shoppingCartData, setShoppingCartData] = useState([
 		{
 			name: 'Artwork Gen Package',
@@ -29,7 +29,7 @@ export default function Home() {
 				shoppingCartData={shoppingCartData}
 			/>
 
-			<Content setCurrentStep={setCurrentStep} />
+			<Content setCurrentStep={setCurrentStep} currentStep={currentStep} />
 		</Flex>
 	);
 }

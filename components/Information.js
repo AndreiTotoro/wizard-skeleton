@@ -7,7 +7,7 @@ import StepDescription from './StepDescription';
 import { StepData } from '../data/StepData';
 
 export default function Information({ currentStep, shoppingCartData }) {
-	const currentStepData = StepData.find((elem) => elem.name == currentStep);
+	const currentStepData = StepData.find((elem) => elem.id == currentStep);
 
 	return (
 		<VStack height="100vh" backgroundColor={'#222222'} flexBasis="25%">

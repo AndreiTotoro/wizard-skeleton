@@ -1,12 +1,12 @@
 import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
-export default function Content({ setCurrentStep }) {
+export default function Content({ setCurrentStep, currentStep }) {
 	const handleNextClick = () => {
-		setCurrentStep('Marketplace Creator');
+		setCurrentStep(currentStep + 1);
 	};
 	const handlePreviousClick = () => {
-		setCurrentStep('Artwork Creator');
+		setCurrentStep(currentStep - 1);
 	};
 
 	return (
@@ -42,16 +42,20 @@ export default function Content({ setCurrentStep }) {
 				>
 					Next Step
 				</Button>
-				<Button
-					backgroundColor="black"
-					alignSelf="flex-start"
-					ml="9"
-					mt="4"
-					px="4"
-					onClick={handlePreviousClick}
-				>
-					Previous Step
-				</Button>
+				{currentStep == 1 ? (
+					''
+				) : (
+					<Button
+						backgroundColor="black"
+						alignSelf="flex-start"
+						ml="9"
+						mt="4"
+						px="4"
+						onClick={handlePreviousClick}
+					>
+						Previous Step
+					</Button>
+				)}
 			</Box>
 		</Flex>
 	);
