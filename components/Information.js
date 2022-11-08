@@ -5,7 +5,7 @@ import ShoppingCart from './ShoppingCart';
 import { SiAseprite } from 'react-icons/si';
 import StepDescription from './StepDescription';
 
-export default function Information() {
+export default function Information({ currentStep }) {
 	return (
 		<VStack height="100vh" backgroundColor={'#222222'} flexBasis="25%">
 			<StepDescription
