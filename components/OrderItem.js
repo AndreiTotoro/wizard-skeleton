@@ -3,7 +3,15 @@ import React from 'react';
 
 export default function OrderItem({ icon, title, description, price }) {
 	return (
-		<Flex width="100%" mb="4" p="2" rounded="md" bgColor="purple">
+		<Flex
+			width="100%"
+			mb="4"
+			p="2"
+			rounded="md"
+			bgColor="purple"
+			alignContent="center"
+			alignItems="center"
+		>
 			<Box
 				mr="4"
 				p="4"
@@ -15,6 +23,7 @@ export default function OrderItem({ icon, title, description, price }) {
 				justifyItems="center"
 				alignItems="center"
 				alignContent="center"
+				justifyContent="center"
 			>
 				{icon}
 			</Box>
